@@ -5,7 +5,7 @@ require("dotenv").config();
 const app = require("../../app");
 // const { User } = require("../../models/user");
 
-const { DB_TEST_HOST, PORT } = process.env;
+// const { DB_TEST_HOST, PORT } = process.env;
 
 describe("test auth routes", () => {
   //   jest.setTimeout(20000);
@@ -23,7 +23,7 @@ describe("test auth routes", () => {
   });
 
   beforeEach((done) => {
-    mongoose.connect(DB_TEST_HOST).then(() => done());
+    // mongoose.connect(DB_TEST_HOST).then(() => done());
   });
 
   afterEach((done) => {
